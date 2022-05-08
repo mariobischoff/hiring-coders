@@ -17,6 +17,7 @@
   <title>Mario Bischoff</title>
 </head>
 <body>
+  <div id="particles-js"></div>
   <header>
     <div>
       <img src="images/mario bischoff-logos_black.png" alt="logo">
@@ -61,6 +62,7 @@
       </div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
   <script>
     function displayAbout() {
       var arrow = document.getElementById("animation")
@@ -68,6 +70,11 @@
       var display = document.getElementById("about")
       display.classList.toggle("active")
     }
-  </script>
+    window.onload = function() {
+      particlesJS.load('particles-js', './assets/particles.json', () => {
+        console.log('particles loaded');
+      });
+    }
+    </script>
 </body>
 </html>
