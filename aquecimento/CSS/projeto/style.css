@@ -1,0 +1,181 @@
+/* 
+/* #B4F8C8 Mint */
+/* #A0E7E5 Tiffany Blue */
+/* #FFAEBC Hot Pink */
+/* #FBE7C6 Yellow */
+
+/* #67595E Coffee Pot */
+/* #A49393 Coffee Pot */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #67595E;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #A0E7E5;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+ul {
+    font-size: 30px;
+    font-style: italic;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 14px ridge #FFF;
+    margin-bottom: 45px;
+}
+
+header img {
+    height: 150px;
+    transform: scale(2,2);
+    filter: brightness(0) saturate(100%) invert(97%) sepia(51%) saturate(7500%) hue-rotate(286deg) brightness(97%) contrast(106%);
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 150ms;
+}
+
+header ul li a:hover {
+    color: #A49393;
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 48px;
+}
+
+.container .name h5 {
+    font-size: 24px;
+}
+
+#arrow i {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#arrow i:hover {
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* border: thick double #FFF; */
+    padding: 25px;
+}
+
+.form input {
+    width: 60%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 20%;
+    margin-top: 30px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px 10px;
+    background-color: #FFAEBC;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-color: #887BB0;
+    color: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 20px;
+    }
+    
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+    header img {
+        height: 90px;
+        
+    }
+
+    header ul li a {
+        font-size: 15px;
+        font-weight: 500;
+    } 
+} */

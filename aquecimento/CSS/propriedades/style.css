@@ -1,0 +1,20 @@
+/* Tags */
+body {
+  text-align: center;
+}
+
+/* IDs */
+#login {
+  background-color: black;
+  color: aliceblue;
+}
+
+#register {
+  background-color: blue;
+  color: aliceblue;
+}
+
+/* classes */
+.copy {
+  font-size: 8px; 
+}
