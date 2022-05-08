@@ -86,10 +86,6 @@ header ul li a:hover {
     cursor: pointer;
 }
 
-#arrow i:hover {
-    animation: blink 1s steps(5, start) infinite;
-}
-
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -111,7 +107,7 @@ header ul li a:hover {
               filter: blur(0px);
       opacity: 1;
     }
-  }  
+  }
 
 @keyframes tracking-in-expand {
     0% {
@@ -124,20 +120,14 @@ header ul li a:hover {
     100% {
       opacity: 1;
     }
-  }  
-
-@keyframes blink {
-    to {
-        visibility: hidden;
-    }
-}
+  }
 
 #animation {
     transition: 300ms;
 }
 
 .rotate {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translate(0, -10px);
     transition: 300ms;
 }
 
