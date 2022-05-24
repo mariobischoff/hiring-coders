@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
-import Home from "./Home";
-import Repositories from "./Repositories";
+import Home from "./pages/Home";
+import Repositories from "./pages/Repositories";
 
 export default function Router() {
   return (
