@@ -1,13 +1,22 @@
+import { ApolloProvider } from "@apollo/client";
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
-import App from "./App";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import client from "./plugins/apollo/client";
 
-import { BrowserRouter } from "react-router-dom";
+const container = document.getElementById("root");
+const root = createRoot(container);
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("root")
+root.render(
+  <ApolloProvider client={client}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/authenticate" element={<SignIn />} />
+      </Routes>
+    </BrowserRouter>
+  </ApolloProvider>
 );

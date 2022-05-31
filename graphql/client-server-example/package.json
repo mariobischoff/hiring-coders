@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start/server": "pnpm --filter @dev-demands/server run dev",
+    "start/web": "pnpm --filter @dev-demands/web run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
