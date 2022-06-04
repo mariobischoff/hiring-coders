@@ -1,7 +1,8 @@
-import { createServer, IncomingMessage, ServerResponse } from "http";
 import { parse as parseQuery } from "query-string";
 import { parse as parseURL } from "url";
+
 import { readFile, unlink, writeFile } from "fs";
+import { createServer, IncomingMessage, ServerResponse } from "http";
 
 const PORT = 3000;
 const HOSTNAME = "localhost";
