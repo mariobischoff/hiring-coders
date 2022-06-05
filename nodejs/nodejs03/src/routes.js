@@ -1,9 +1,9 @@
-const { Router } = require("express");
+import { Router } from "express";
+import UserControler from "./app/controllers/UserControler";
 
 const routes = new Router();
 
-routes.get("/", (_, res) => {
-  return res.json({ message: "Ok" });
-});
+routes.post("/users", UserControler.store);
+routes.get("/users", UserControler.list);
 
-module.exports = routes;
+export default routes;
