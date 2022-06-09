@@ -5,6 +5,7 @@ import multerConfig from "./config/multer";
 import UserControler from "./app/controllers/UserControler";
 import SessionController from "./app/controllers/SessionController";
 import FileController from "./app/controllers/FileController";
+import CollaboratorController from "./app/controllers/CollaboratorController";
 
 import authMiddleware from "./app/middlewares/auth";
 
@@ -18,6 +19,10 @@ routes.post("/session", SessionController.store);
 // Rotas autenticadas
 routes.use(authMiddleware);
 routes.get("/users", UserControler.list);
+
+// Lista colaboradores
+routes.get("/collaborator", CollaboratorController.index);
+
 routes.put("/users", UserControler.update);
 
 // Upload de arquivos

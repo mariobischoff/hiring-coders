@@ -25,7 +25,7 @@ class User extends Model {
     return this;
   }
   static associate(models) {
-    this.belongsTo(models.Files, { foreignKey: "photo_id" });
+    this.belongsTo(models.Files, { foreignKey: "photo_id", as: "photo" });
   }
   async checkPassword(password) {
     return bcrypt.compare(password, this.password_hash);
